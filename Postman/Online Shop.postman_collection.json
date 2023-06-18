@@ -1,0 +1,829 @@
+{
+	"info": {
+		"_postman_id": "8416eba2-92ef-46e5-83cd-75f2c2429334",
+		"name": "Online Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28028535"
+	},
+	"item": [
+		{
+			"name": "Custoemers",
+			"item": [
+				{
+					"name": "Get Custoemrs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/get-customers/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"get-customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Acount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "FirstName",
+									"value": "محمد رضا",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "عسگری",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "example(2)@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "09123456789",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "test address",
+									"type": "text"
+								},
+								{
+									"key": "City",
+									"value": "qom",
+									"type": "text"
+								},
+								{
+									"key": "State",
+									"value": "ایران",
+									"type": "text"
+								},
+								{
+									"key": "PostalCode",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "M.askari",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/signup-customer/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"signup-customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Acount",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "1014",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/delete-customer/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"delete-customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Acount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "1014",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "exampel@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "City",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "State",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "PostalCode",
+									"value": "Product example",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Product example",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/update-customer/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"update-customer",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produscts",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/get-products/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"get-products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ProductName",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Test Description",
+									"type": "text"
+								},
+								{
+									"key": "Price",
+									"value": "48000",
+									"type": "text"
+								},
+								{
+									"key": "Image",
+									"value": "C:\\Users\\MohammadMahdi\\Desktop\\CoffeeShop\\Data\\Picture\\ProductImage\\Coffee-wallper(1).jpg",
+									"type": "text"
+								},
+								{
+									"key": "CategoryID",
+									"value": "204",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/create-product/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"create-product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "5017",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/delete-product/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"delete-product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "5016",
+									"type": "text"
+								},
+								{
+									"key": "ProductName",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Test Description - more",
+									"type": "text"
+								},
+								{
+									"key": "Price",
+									"value": "62000",
+									"type": "text"
+								},
+								{
+									"key": "Image",
+									"value": "C:\\Users\\MohammadMahdi\\Desktop\\CoffeeShop\\Data\\Picture\\ProductImage\\Coffee-wallper(1).jpg",
+									"type": "text"
+								},
+								{
+									"key": "CategoryID",
+									"value": "202",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/update-product/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"update-product",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/get-category/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"get-category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "CategoryName",
+									"value": "category test",
+									"type": "text"
+								},
+								{
+									"key": "CategoryDescription",
+									"value": "category test",
+									"type": "text"
+								},
+								{
+									"key": "CategoryImage",
+									"value": "category test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/create-category/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"create-category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "205",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/delete-category/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"delete-category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "205",
+									"type": "text"
+								},
+								{
+									"key": "CategoryName",
+									"value": "category example",
+									"type": "text"
+								},
+								{
+									"key": "CategoryDescription",
+									"value": "category example",
+									"type": "text"
+								},
+								{
+									"key": "CategoryImage",
+									"value": "category example",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/category-update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"category-update",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/get-orders/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"get-orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "CustomerOrder",
+									"value": "1007",
+									"type": "text"
+								},
+								{
+									"key": "OrderDate",
+									"value": "1402/03/27",
+									"type": "text"
+								},
+								{
+									"key": "TotalAmount",
+									"value": "50000",
+									"type": "text"
+								},
+								{
+									"key": "PaymentType",
+									"value": "درگاه‌ پرداخت اینترنتی",
+									"type": "text"
+								},
+								{
+									"key": "Status",
+									"value": "بررسی",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/create-order/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"create-order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "10023",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/delete-order/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"delete-order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "10022",
+									"type": "text"
+								},
+								{
+									"key": "CustomerOrder",
+									"value": "1007",
+									"type": "text"
+								},
+								{
+									"key": "OrderDate",
+									"value": "1402/03/27",
+									"type": "text"
+								},
+								{
+									"key": "TotalAmount",
+									"value": "95000",
+									"type": "text"
+								},
+								{
+									"key": "PaymentType",
+									"value": "درگاه‌ پرداخت اینترنتی",
+									"type": "text"
+								},
+								{
+									"key": "Status",
+									"value": "تایید",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/update-order/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"update-order",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderDetails",
+			"item": [
+				{
+					"name": "Get OrderDetails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ID",
+									"value": "10030",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/get-orderdetails/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"get-orderdetails",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update OrderDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Cart",
+									"value": "[\n    {\n        \"ID\": \"5006\",\n        \"Name\": \"چای سفید\",\n        \"Count\": \"1\",\n        \"Price\": \"20000\",\n        \"TotalAmount\": \"20000\"\n    },\n    {\n        \"ID\": \"5008\",\n        \"Name\": \"چای ماسالا\",\n        \"Count\": \"2\",\n        \"Price\": \"33000\",\n        \"TotalAmount\": \"66000\"\n    },\n    {\n        \"ID\": \"5012\",\n        \"Name\": \"ماکیاتو\",\n        \"Count\": \"2\",\n        \"Price\": \"49000\",\n        \"TotalAmount\": \"98000\"\n    }\n]",
+									"description": "Json",
+									"type": "text"
+								},
+								{
+									"key": "ID",
+									"value": "10029",
+									"description": "OrderID",
+									"type": "text"
+								},
+								{
+									"key": "Status",
+									"value": "تایید",
+									"description": "وضعیت",
+									"type": "text"
+								},
+								{
+									"key": "CustomerOrder",
+									"value": "1001",
+									"description": "CustomerID",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/coffeeshop/update-orderdetails/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"coffeeshop",
+								"update-orderdetails",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
